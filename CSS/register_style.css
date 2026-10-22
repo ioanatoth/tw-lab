@@ -1,0 +1,152 @@
+html, body {
+    background: #1e293b;
+    color: #f8fafc;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    width: 100%;
+    max-width: 800px; /* Lățimea de bază extinsă pe ecrane mari */
+    background-color: #334155;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #fbbf24;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: #ffffff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #fbbf24;
+}
+
+.two-col {
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.checkbox-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #fbbf24;
+    color: #0f172a;
+}
+
+.btn.ghost {
+    background-color: transparent;
+    color: #cbd5e1;
+    border: 1px solid #cbd5e1;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #fbbf24;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------
+   REGULI RESPONSIVE PENTRU PAGINA DE REGISTER
+   -------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .page {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 700px;
+        padding: 20px;
+    }
+
+    .checkbox-grid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .page {
+        padding: 10px 0;
+    }
+
+    .card {
+        width: 95%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .two-col {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
