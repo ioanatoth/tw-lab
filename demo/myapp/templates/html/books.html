@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'CSS/books_style.css' %}">
+  <title>Books Search - Web Technologies</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'books_page' %}">Books API</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Books Search (Open Library)</h1>
+
+    <form id="searchForm">
+      <input id="queryInput" type="text" placeholder="Search books (e.g. javascript, django)...">
+      <button id="searchBtn" type="submit">Search</button>
+    </form>
+
+    <p id="status" aria-live="polite"></p>
+    <div id="results"></div>
+  </main>
+
+  <footer>
+    <p>Web Technologies Lab 8 &amp; 9</p>
+  </footer>
+
+  <script src="{% static 'JS/books.js' %}"></script>
+</body>
+</html>
