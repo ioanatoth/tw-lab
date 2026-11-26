@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  header nav a {
+    color: #93c5fd;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #searchForm {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  #queryInput {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: #f8fafc;
+    flex: 1;
+  }
+  
+  #searchBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #searchBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  #status {
+    min-height: 1.5rem;
+    margin: 0.5rem 0;
+    color: #cbd5e1;
+  }
+  
+  #results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    padding: 1rem;
+    border: 1px solid #334155;
+    border-radius: 0.5rem;
+    background-color: #1e293b;
+  }
+  
+  .card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+    color: #f8fafc;
+  }
+  
+  .card p {
+    margin: 0.35rem 0;
+    font-size: 0.92rem;
+    color: #cbd5e1;
+  }
+  
+  .card p.meta {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 0.75rem;
+  }

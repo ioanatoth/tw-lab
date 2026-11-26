@@ -5,5 +5,5 @@ def home(request):
     return HttpResponse("hello world")
 
 
-def books_page(request):
-    return render(request, "./html/books.html")
+def joke_page(request):
+    return render(request, "./html/joke.html")

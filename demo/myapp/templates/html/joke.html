@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'CSS/joke_style.css' %}">
+  <title>JokeAPI Explorer - Web Technologies</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'joke_page' %}">JokeAPI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>JokeAPI Search</h1>
+
+    <form id="searchForm">
+      <input id="queryInput" type="text" placeholder="Search keyword (e.g. code, computer, programming)...">
+      <button id="searchBtn" type="submit">Search</button>
+    </form>
+
+    <p id="status" aria-live="polite"></p>
+    <div id="results"></div>
+  </main>
+
+  <footer>
+    <p>Web Technologies Lab 9 — JokeAPI</p>
+  </footer>
+
+  <script src="{% static 'JS/joke.js' %}"></script>
+</body>
+</html>

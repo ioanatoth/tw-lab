@@ -6,7 +6,7 @@
 // Status code seen: 200
 // Fields used: key, title, author_name, first_publish_year
 // Relevance: Fits a web technology community portal by allowing students to search programming and web development books.
-
+export {};
 interface BookDoc {
     key: string;
     title: string;
